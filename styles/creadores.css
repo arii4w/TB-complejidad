@@ -1,0 +1,26 @@
+.screen2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.info{
+    position: relative;
+    color:#FCF4DA;
+    font-size: 25px;
+    bottom:15%;
+}
+
+ul{ text-align: justify;}
+
+.building{
+    position: absolute;
+    bottom: 15%; 
+    opacity: 0.7;
+}
+
+#building1{ height: 15%; left:56.5%;}
+#building2{ height: 30%; left:49.5%;}
+#building3{ height: 25%; left:43.5%;}
+#building4{ height: 15%; left:37%;}

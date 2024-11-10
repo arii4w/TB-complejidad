@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TB-Complejidad</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/creadores.css">
+</head>
+<body>
+    
+    <div id="rectangle"></div>
+    <div class="container-wrapper" id="container-wrapper">
+        <!-- PANTALLA DE INICIO -->
+        <section class="screen screen1" id="container1">
+            <h2 id="intro-phrase">Hacia una Ciudad más Limpia</h2>
+            <h1 id="intro-title" class="fade">Encuentra tu RUTA!</h1>
+            <object id="traffic-sign" type="image/svg+xml" data="images/sign3.svg"></object>
+            <input type="button" id="go" value="Go">
+            <!-- CAMION -->
+            <object id="light" type="image/svg+xml" data="images/luz.svg"></object>
+            <div class="truck-mov">
+                <object id="truck" type="image/svg+xml" data="images/truck2.svg"></object>
+                <object class="wheel" id="wheel1" type="image/svg+xml" data="images/wheel.svg"></object>
+                <object class="wheel" id="wheel2" type="image/svg+xml" data="images/wheel.svg"></object>
+                <object class="wheel" id="wheel3" type="image/svg+xml" data="images/wheel.svg"></object>
+            </div>
+        </section>
+
+        <!-- PANTALLA DE CREADORES -->
+        <section class="screen screen2" id="container2">
+            <div class="info">
+                <h1>Trabajo Final</h1>
+                <h2>Complejidad Algoritmica</h2>
+                <ul>
+                    <li>Agreda Sobrino, Ariana Cecilia</li>
+                    <li>Belledonne Espinoza, Claudia Valeria</li>
+                    <li>Elera Rodríguez, Mauricio Daniel</li>
+                </ul>
+            </div>
+            <div class="build">
+                <object class="building" id="building4" type="image/svg+xml" data="images/b4.svg"></object>
+                <object class="building" id="building1" type="image/svg+xml" data="images/b1.svg"></object>
+                <object class="building" id="building2" type="image/svg+xml" data="images/b2.svg"></object>
+                <object class="building" id="building3" type="image/svg+xml" data="images/b3.svg"></object>
+
+            </div>
+        </section>
+
+        <!-- PANTALLA DE CREACIÓN DE GRAFOS -->
+        <section class="screen screen3" id="container3">
+            <div class="input-var"></div>
+            <div class="show"></div>
+            <div class="district-table-container">
+                <table class="district-table"> 
+                    <tr>
+                        <th>Distrito</th>
+                        <th>Basura generada</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="scripts/animations.js" type="module"></script>
+
+</body>
+</html>
