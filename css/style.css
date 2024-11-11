@@ -1,0 +1,22 @@
+body {
+    background-color: var(--bl1);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+}
+.container-wrapper {
+    display: flex;
+    width: 300%;
+    transition: transform 3s ease;
+    position: relative;
+}
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    position: relative; 
+}

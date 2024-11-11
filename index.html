@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google Fonts -->
+
+    <!-- native styles -->
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/front-page.css">
+    <link rel="stylesheet" href="css/creators-page.css">
+    <link rel="stylesheet" href="css/functional-page.css">
+
+</head>
+<body>
+    
+    <div id="container-wrapper" class="container-wrapper">
+
+        <!-- front page -->
+        <header id="front-page" class="screen screen-1">
+
+            <!-- elements -->
+            <div class="elem-road"></div>
+            <object id="elem-traffic-sign" class="mov-elem" type="image/svg+xml" data="img/sign.svg"></object>
+            <object id="elem-light" class="mov-elem" type="image/svg+xml" data="img/light.svg"></object>
+            <div class="elem-mov-truck mov-elem">
+                <object id="elem-truck" type="image/svg+xml" data="img/truck.svg"></object>
+                <object class="elem-wheel" id="elem-wheel-1" type="image/svg+xml" data="img/wheel.svg"></object>
+                <object class="elem-wheel" id="elem-wheel-2" type="image/svg+xml" data="img/wheel.svg"></object>
+                <object class="elem-wheel" id="elem-wheel-3" type="image/svg+xml" data="img/wheel.svg"></object>
+            </div>
+
+            <!-- CTA -->
+            <input type="button" id="button-go" class="elem-button" value="Go">
+
+            <!-- text -->
+            <h2 id="front-page-phrase" class="text-elem">Hacia una Ciudad más Limpia</h2>
+            <h1 id="front-page-title" class="fade">Encuentra tu Ruta!</h1>
+        </header>
+
+        <!-- creators page -->
+        <section id="creators-page" class="screen screen-2">
+            <div class="elem-road"></div>
+            <div class="creators-page-info">
+                <h1>Trabajo Final</h1>
+                <h2>Complejidad Algoritmica</h2>
+                <ul>
+                    <li>Agreda Sobrino, Ariana Cecilia</li>
+                    <li>Belledonne Espinoza, Claudia Valeria</li>
+                    <li>Elera Rodríguez, Mauricio Daniel</li>
+                </ul>
+            </div>
+            <div class="elem-build">
+                <object class="elem-building" id="elem-building-4" type="image/svg+xml" data="img/b4.svg"></object>
+                <object class="elem-building" id="elem-building-1" type="image/svg+xml" data="img/b1.svg"></object>
+                <object class="elem-building" id="elem-building-2" type="image/svg+xml" data="img/b2.svg"></object>
+                <object class="elem-building" id="elem-building-3" type="image/svg+xml" data="img/b3.svg"></object>
+            </div>
+
+        </section>
+
+        <!-- functional page -->
+        <main id="functional-page" class="screen screen-3">
+            <div class="functional-page-info">
+
+                <!-- district name -->
+                <div class="elem-district-name-container">
+                    <h2 id="elem-district-name">San Juan de Lurigancho</h2>
+                </div>
+
+                <!-- districts table -->
+                <div class="elem-district-table-container"> <div id="elem-district-table"></div> </div>
+
+                <form class="elem-route-form" method="post">
+                    <!-- truck quantity -->
+                    <div class="elem-form-group">
+                        <label for="truck-quantity"> <h3>Cantidad de camiones</h3> </label>
+                        <input type="number" name="truck-quantity" id="truck-quantity" required />
+                    </div>
+                    <!-- truck capacity -->
+                    <div class="elem-form-group">
+                        <label for="truck-capacity"> <h3>Capacidad de camiones</h3> </label>
+                        <input type="number" name="truck-capacity" id="truck-capacity" required />
+                    </div>
+                
+                    <!-- CTA -->
+                    <div class="elem-form-button">
+                        <input type="submit" value="Generar Ruta" class="btn-submit elem-button" />
+                    </div>
+                </form>
+            </div>
+
+            <!-- graph -->
+            <div class="functional-page-show"> </div>
+        </main>
+
+    </div>
+
+    
+    <script src="js/distritos_basura.js"></script> 
+    <script src="js/district_data.js"></script>  
+    <script src="js/animations.js" type="module"></script>
+</body>
+</html>

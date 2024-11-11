@@ -1,0 +1,26 @@
+.screen-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.creators-page-info{
+    position: relative; bottom:15%;
+
+    color:var(--text);
+    font-size: 25px;
+}
+
+ul{ text-align: justify;}
+
+.elem-building{
+    position: absolute; bottom: 15%; 
+    
+    opacity: 0.7;
+}
+
+#elem-building-1{ height: 15%; left:56.5%;}
+#elem-building-2{ height: 30%; left:49.5%;}
+#elem-building-3{ height: 25%; left:43.5%;}
+#elem-building-4{ height: 15%; left:37%;}
